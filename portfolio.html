@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="portfolio me.css" />
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <img src="images/Chhavi_Sharma.jpg" class="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="images/my-cv.jpg" download class="btn">Resume</a>
+      </nav>
+
+      <div class="content">
+        <span class="title">Somophore @Banasthali</span>
+        <h1>Hello, I am Chhavi Sharma</h1>
+      </div>
+    </div>
+    <!-- about section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                  <img src="images/about.jpg">
+                  </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am undergraduate Btech computer science student 
+                  Attracted by the advancing technological world, 
+                  I am enthusiastic and keen to explore and learn
+                  new tech fields.</p>
+
+                  <div class="'tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                      <li><span>Development</span><br><span>Html,CSS</li>
+                      <li><span>Programming</span><br>C,C++,JS</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                      <li><span>NOV -2022-Presnt</span><br><span>Event Head at GFG Student Club</li>
+                      <li><span>DEC-2022 - Present</span><br>Content team and Video Editor at CodeIn community</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>Batch of 2025</span><br><span>B.tech CSE from Banasthali University</li>
+                      <li><span>2021</span><br>Amity International School</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>               
+   
+<!-- contact section-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fab fa-paper-plane"></i>chhavi29lucky@gmail.com</p>
+            <p><i class="fab fa-phone-square-alt"></i>9718664305</p>
+            <div class="social-icons">
+              <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+  </div>
+      <div class="contact-right">
+        <form>
+            <input type="text" class="form-control form-control-lg" placeholder=" Your Name">
+            <input type="email" class="form-control mt-3" placeholder=" Your Email">
+            <input type="text" class="form-control mt-3" placeholder="Your Message">
+            <button type="submit">Submit</button></form>
+        </form>
+        </div>
+     </div>
+    </div>
+      </div>
+  </section>
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tablinks=document.getElementsByClassName("tab-contents");
+  function opentab(tabname)
+  {
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
